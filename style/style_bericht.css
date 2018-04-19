@@ -1,0 +1,218 @@
+/* demo page styles */
+body {
+   	background:#ffffff;
+    margin:10;
+    padding:10;
+   
+}
+.example {
+    margin:20px auto;
+    padding:15px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+
+/* main menu styles */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+#menu {
+width: 200px;
+padding: 0 20px;
+background: #ffffff;
+font-family: Verdana;
+font-size: 1em;
+line-height: 1.5;
+
+}
+
+#menu ul {
+width: 200px;
+list-style-type: none;
+}
+
+/*--definiert die Blocküberschriften--*/
+#menu h3 {
+font-size: 1em;
+text-align: center;
+color: #000;
+border: 1px solid #ffffff;
+background: #80ff80;
+}
+
+/*--definiert die "Ausklapp-Links" im Normalzustand--*/
+#menu a {
+text-decoration: none;
+display: block;
+border: 1px solid #ccc;
+text-align: center;
+background: #ffffff;
+color: #000000;
+}
+
+/*--definiert die "Ausklapp-Links" im Hoverzustand--*/
+#menu a:hover {
+color: #ffffff;
+background: #008000;
+}
+
+/*verhindert im Zusammenhang mit position absolute bei ul ul
+*eine Höhenvergrößerung von #menu beim Hovern--
+*/
+
+#menu li {
+position: relative;
+}
+
+/*--versteckt die "Ausklapp-Links", solange nicht gehovert wird--*/
+#menu ul ul {
+position: relative;
+top: 0px; left: 1px; z-index: 2;
+display: none;
+}
+
+/*--lässt die Ausklapp-Links beim Hovern erscheinen--*/
+#menu ul li:hover ul {
+display: block;
+}
+
+/*--nur für IE-Versionen kleiner gleich 6 erkennbar--*/
+* html #menu ul li{
+float: right;
+width: 100%;
+}
+
+/*--nur für IE 7 erkennbar--*/
+*+ html #menu ul li {
+float: right;
+width: 100%;
+}
+
+/*--bewirkt Hover-Effekt für IE kleiner 7 auch für ul- und li-Elemente--*/
+*html body {
+behavior: url(csshover3-source.htc);
+font-size: 100%;
+}
+
+*html #menu ul li a {
+height: 1%;
+}
+
+/*--definiert einen Einzellink im Normalzustand, wenn kein Ausklappen erforderlich--*/
+
+#menu a.direkt:link {
+font-size: 1em;
+font-weight: bold;
+text-align: center;
+color: #000;
+border: 1px solid #003366;
+background: #ff8000;
+}
+
+/*--definiert einen Einzellink im Hoverzustand, wenn kein Ausklappen erforderlich--*/
+
+#menu a.direkt:hover {
+color: #ff9224;
+background: #003366;
+border: 1px solid #ccc;
+}
+@CHARSET "UTF-8";
+
+/* Tabellen Formatierung */
+
+	table {
+		border-collapse: collapse;
+		width: 100%;}
+
+	tr.border_tr th {
+		border: 1px;
+		border-color: black;
+		border-style: solid;
+		text-align: center;
+		min-width: 80px;
+	}
+
+	.thead {
+		background-color: #555;
+    	color: white;
+    	border: 2px;
+		border-color: black;
+		border-style: solid;
+		text-align: center;
+		min-width: 80px;
+	}
+
+	tr:nth-child(even){
+		background-color: #f2f2f2;
+		}
+
+/* Eingabefelder */
+	label{
+		display: inline-block;
+		width: 9em;
+		margin-top: 1em;
+		vertical-align: top;
+		color: #000000;
+	}
+	
+	#vorn{
+ 		margin-top: 1em;
+ 		vertical-align: top;
+		}
+
+	input[type=text]:focus {
+    	background-color: lightblue;
+		}	
+
+	input[type=date]:focus {
+    	background-color: lightblue;
+		}
+
+	input[type=select]:focus {
+    	background-color: lightblue;
+		}		
+
+	input[type=submit] {
+    background-color: #008000;
+    border: none;
+    color: #ffffff;
+    padding: 4px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 11em;
+    border-radius:10px;
+       -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+	button[type=submit] {
+		padding-left: 15em;
+    	background-color: #008000;
+    	border: none;
+    	color: #ffffff;
+    	padding: 4px 20px;
+    	text-decoration: none;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	width: 11em;
+    	border-radius:10px;
+       		-moz-border-radius:10px;
+    		-webkit-border-radius:10px;
+}
+.error {color: #FF0000;
+		padding-left: 15em;
+		display: inline-block;
+		width: 20em;
+		margin-top: 1em;
+ 		vertical-align: top;
+ }
+img {
+	 background:url(../img/logo.jpg);
+    background-repeat:no-repeat;
+   	position:right top;
+}
