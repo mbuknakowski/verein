@@ -1,0 +1,123 @@
+/* demo page styles */
+body {
+background:#ffffff;
+margin:0;
+padding:0;
+}
+
+@CHARSET "UTF-8";
+
+/* Tabellen Formatierung */
+
+	table {
+		border-collapse: collapse;}
+
+	tr.border_tr th {
+		border-bottom: 2px;
+		border-bottom-color: black;
+		border-bottom-style: solid;
+		text-align: center;
+		min-width: 160px;
+	}
+
+	.thead {
+    	border-bottom: 3px;
+		border-bottom-color: black;
+		border-bottom-style: solid;
+		text-align: center;
+		min-width: 160spx;
+	}
+
+	tr:nth-child(even){
+		background-color: #f2f2f2;
+		}
+
+/* Eingabefelder */
+	label{
+		display: inline-block;
+		width: 9em;
+		margin-top: 1em;
+		vertical-align: top;
+		color: #000000;
+	}
+	
+	#vorn{
+ 		margin-top: 1em;
+ 		vertical-align: top;
+		}
+
+	input[type=text]:focus {
+    	background-color: lightblue;
+		}	
+
+	input[type=date]:focus {
+    	background-color: lightblue;
+		}
+
+	input[type=select]:focus {
+    	background-color: lightblue;
+		}		
+
+	input[type=submit] {
+    background-color: #008000;
+    border: none;
+    color: #ffffff;
+    padding: 4px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 11em;
+    border-radius:10px;
+       -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+	button[type=submit] {
+		padding-left: 15em;
+    	background-color: #008000;
+    	border: none;
+    	color: #ffffff;
+    	padding: 4px 20px;
+    	text-decoration: none;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	width: 11em;
+    	border-radius:10px;
+       		-moz-border-radius:10px;
+    		-webkit-border-radius:10px;
+}
+
+.button {
+     /* Green */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+}
+
+.button1 {background-color: #ff8000;}
+.button2 {background-color: #4caf50;}
+.button3 {background-color: #0000ff;}
+.button4 {background-color: #ff0080;}
+.button5 {background-color: #877d74;}
+.button6 {background-color: #804040;}
+
+.error {color: #FF0000;
+		padding-left: 6px;
+		display: inline-block;
+		width: 20em;
+		margin-top: 1em;
+ 		vertical-align: top;
+ }
+img {
+	 background:url(../img/logo.jpg);
+    background-repeat:no-repeat;
+   	position:right top;
+}
