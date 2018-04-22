@@ -23,7 +23,7 @@ $vkpreis=array();
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" media="all" type="text/css" href="./Style/style_bericht.css">
+<link rel="stylesheet" media="all" type="text/css" href="./style/style_bericht.css">
 <title>Einkaufsliste</title>
 </head>
 <body>
